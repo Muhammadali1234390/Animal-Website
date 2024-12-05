@@ -6,32 +6,36 @@ body{
     overflow-x: hidden;
     font-family: "Muli", sans-serif;
 }
-.user-1{
+header{
     background-image: url("img/h1_hero.png");
     height: 938px;
     width: 100%;
-    margin-left: -5px;
     margin-top: -20px;
 }
-.user-1 img{
+nav img{
     margin-left: 70px;
     cursor: pointer;
 }
-.ali{
+nav{
     display: flex;
     height: 100px;
+    margin-left: 30px;
 }
-.ali img{
+nav img{
     margin-top: 30px;
 }
-.ali ul{
+nav ul{
     display: flex;
     list-style-type: none;
     margin-top: 40px;
     color: #112957;
 }
-.ali li{
+nav li{
     transition: all .3s ease-out 0s;
+}
+nav li a{
+  text-decoration: none;
+  color: #112957;
 }
 #loader {
     position: absolute;
@@ -81,11 +85,11 @@ body{
     display: none;
     text-align: center;
   }
-  .ali li:hover{
+  nav li:hover{
     color: #FF2424;
     cursor: pointer;
   }
-  .ali button{
+  nav button{
     padding: 18px 36px;
     background-color: #ff2121;
     border-radius: 30px;
@@ -132,6 +136,7 @@ body{
   .ali-1 p{
     text-align: left;
     margin-left: 200px;
+    font-family: "Josefin Sans", sans-serif;
   }
   .ali-1 #contact{
     margin-left: -1122px;
@@ -139,6 +144,7 @@ body{
     font-family: 'Arial',sans-serif;
     font-size: 20px;
     transition: 0.3s;
+    font-family: "Josefin Sans", sans-serif;
   }
   .ali-1 #contact:hover{
     text-decoration: none;
@@ -146,15 +152,18 @@ body{
   .user-2 span{
     font-size: 16px;
     font-weight: 500;
+    font-family: "Josefin Sans", sans-serif;
   }
 .user-2 h2{
   font-size: 44px;
   font-weight: 800;
   color: #111111;
+  font-family: "Josefin Sans", sans-serif;
 }
 .row {
   display: flex;
   justify-content: space-around;
+  font-family: "Josefin Sans", sans-serif;
 }
 .dropdown {
   position: relative;
@@ -256,17 +265,26 @@ body{
   font-weight: 800;
   color: #fff;
   margin-top: -1px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.hum{
+  margin-top: -180px;
 }
 .hum p {
   color: #fff;
   margin-top: -10px;
 }
 .user-3{
-  display: flexbox;
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+}
+.user-3-1 img{
+  margin-top: -100px;
+  margin-left: 1px;
 }
 .humgh{
-  margin-top: -224px;
-  margin-left: 650px;
+  margin-left: 660px;
+  margin-top: -180px;
   background-color: #EB4916;
   z-index: 1;
   position: relative;
@@ -274,6 +292,9 @@ body{
 }
 .humgh svg{
   margin-left: -150px;
+}
+.row{
+  display: flex;
 }
 .flex{
   display: flex;
@@ -298,10 +319,13 @@ body{
 .user-3-2 {
   color: #111111;
   background-color: #F8DADB;
-  margin-left: 951px;
-  margin-top: -680px;
+  margin-top: -100px;
   height: 680px;
+  width: 100%;
   text-align: left;
+}
+.hum{
+  margin-left: 360px;
 }
 .user-3-2 .tou{
   font-size: 20px;
@@ -734,7 +758,13 @@ body{
 .content-1 p{
   color: #506172;
   font-weight: 300;
+  transition: 0.3s;
   margin-left:-1px;
+  cursor: pointer;
+}
+.content-1 p:hover{
+  color: #FF2121;
+  margin-left: 5px;
 }
 .copyright a{
   text-decoration: none;
@@ -746,4 +776,63 @@ body{
 }
 .copyright i{
   color: #FF2121;
+}
+#myDiv > button{
+  z-index: 3;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 50px;
+  margin-top: 800px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  transition: 0.4s;
+}
+#myDiv > button:hover{
+  background-color: #ffffff;
+  color: #3498db;
+}
+#myDiv > button:hover i{
+  color: #3498db;
+}
+#myDiv > button i{
+  color: #fff;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 1294px){
+  .ali-1{
+    text-align: center;
+  }
+  .ali-1 h1{
+    margin-left: 0px;
+  }
+  .ali-1 h5{
+margin-left: 0px;
+  }
+  .ali-1 p{
+margin-left: 30px;
+text-align: center;
+  }
+  .ali-1 button{
+margin-left: 0px;
+  }
+  .user-3{
+    display: block;
+  }
+  .user-3-2{
+    margin-top: 1px;
+  }
+  .img-1{
+    display: block;
+  }
+  .user-5{
+    display: block;
+  }
+  .row{
+    display: block;
+  }
+  .footer
+  {display: block;}
 }
